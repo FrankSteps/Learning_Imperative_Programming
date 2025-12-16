@@ -9,25 +9,30 @@ notas de cada um dos 150 alunos e identificar se foi aprovado.
 
 int main() {
     double nota;
-    int aprovadas;
+    int avaliAprovadas;
 
+    // 150 alunos na matéria de Programação imperativa 
     for (int aluno = 1; aluno <= 150; aluno++) {
-        aprovadas = 0;
+        avaliAprovadas = 0;
 
+        // 12 avaliações para cada aluno 
         for (int i = 1; i <= 12; i++) {
             scanf("%lf", &nota);
 
+            // verificando se a prova tem nota maior ou igual a 6
             if (nota >= 6.0) {
-                aprovados++;
+                avaliAprovadas++;
             }
         }
 
-        if (aprovados >= 7) {
+        // verificando a quantidade de provas a qual o mesmo foi aprovado
+        if (avaliAprovadas >= 7) {
             printf("APROVADO\n");
         } else {
             printf("REPROVADO\n");
         }
     }
 
+    // fim do programa
     return 0;
 }

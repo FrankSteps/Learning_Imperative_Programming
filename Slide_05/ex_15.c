@@ -1,5 +1,5 @@
 /*
-15. Escrever programa em C para exibir termos de uma PA
+16. Escrever programa em C para exibir termos de uma PA
 (progressão aritmética). Ler valor inicial, razão desta e
 quantidade de termos desejados.
 */
@@ -13,12 +13,14 @@ int main() {
     scanf("%d", &r);   // razão
     scanf("%d", &n);   // quantidade de termos
 
-    termo = a1;
+    termo = a1;        // definição apenas - para boas práticas da programação
 
+    // calculando a quantidade de termos desejados
     for (int i = 1; i <= n; i++) {
         printf("%d\n", termo);
         termo += r;
     }
 
+    // fim do programa
     return 0;
 }

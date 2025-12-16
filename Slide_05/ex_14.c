@@ -32,5 +32,6 @@ int main() {
     printf("%d\n", total);
     printf("%d\n", viagens);
 
+    // fim do programa
     return 0;
 }

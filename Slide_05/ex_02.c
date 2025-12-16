@@ -11,18 +11,22 @@ A saída deve ser, se dado 3:
 2^3 = 2*2*2 = 8
 */
 
+// bibliotecas usadas no projeto
 #include <stdio.h>
 #include <math.h>
 
 int main() {
     int expoente;
 
+    // interação com o usuário
     printf("Digite o expoente: ");
     scanf("%d", &expoente);
 
+    // parte responsável por calcular a potência dos números
     for (int i = 1; i <= 10; i++) {
         printf("%.0lf\n", pow(i, expoente));
     }
 
+    // fim do programa
     return 0;
 }

@@ -33,5 +33,6 @@ int main() {
     printf("%.2lf\n", soma);
     printf("%.2lf\n", soma / N);
 
+    // fim do programa
     return 0;
 }

@@ -27,8 +27,9 @@ int main() {
     // parte responsável por calcular e exibir as potências do número digitado
     for (int i = 1; i <= 10; i++) {
     	resultado = pow(n, i);
-    	printf("%d^%d = %.0lf\n", n, i, resultado);
+    	printf("%.0lf\n", resultado);
 	}
 
+    // fim do programa
     return 0;
 }

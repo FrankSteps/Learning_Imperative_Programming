@@ -7,13 +7,15 @@ desse mesmo intervalo.
 #include <stdio.h>
 
 int main() {
-    int N, num;
+    int quantN, num;
     int dentro = 0, fora = 0;
 
+    // interação com o usuário :: quantidade N de números
     printf("digite a quantidade de números: ");
-    scanf("%d", &N);
+    scanf("%d", &quantN);
 
-    for (int i = 1; i <= N; i++) {
+    // responsável por adicionar os números e julgar como dentro ou fora do intervalo [10, 20]
+    for (int i = 1; i <= quantN; i++) {
         printf("Digite o número %d: ", i);
         scanf("%d", &num);
 
@@ -24,8 +26,10 @@ int main() {
         }
     }
 
+    // mostrando o resultado para o usuário
     printf("Dentro do intervalo:  %d\n", dentro);
     printf("Fora do intervalo:    %d\n", fora);
 
+    // fim do programa
     return 0;
 }
